@@ -1,3 +1,7 @@
+* {
+    /* outline: 1px solid #00f; */
+}
+
 .slick-track,
 .slick-list {
     transition-delay: 0.03s;
@@ -87,11 +91,11 @@
     height: 600px;
 }
 
-.mainVisual .mainSlide .itm01 {
+.mainVisual .mainSlide .slide01 {
     background: url(../img/main_slide01.jpg) no-repeat center center/cover;
 }
 
-.mainVisual .mainSlide .itm02 {
+.mainVisual .mainSlide .slide02 {
     background: url(../img/main_slide02.jpg) no-repeat center center/cover;
 }
 
@@ -185,11 +189,18 @@
     border: 2px solid #bababa;
 }
 
+.mainContent .tireImg img {
+    height: 200px;
+}
 
-.mainContent h3 {
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
     font-size: 50px;
     font-weight: 700;
-    margin: 100px 0 20px 0;
+    margin: 0 0 20px 0;
     color: #333;
     text-align: center;
 }
@@ -197,7 +208,7 @@
 .mainContent p {
     font-size: 20px;
     font-weight: 500;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
     color: #333;
     text-align: center;
 }
@@ -205,6 +216,7 @@
 .mainContent .inner {
     display: flex;
     gap: 30px;
+
     width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -216,13 +228,14 @@
 }
 
 .mainContent .inner figure {
+    flex: 1;
     margin: 0 auto;
 }
 
 .mainContent .inner img {
-    flex: 0;
+
     width: 100%;
-    height: 100%;
+
 }
 
 .mainContent .inner article {
@@ -230,7 +243,7 @@
     margin: 10px 0 100px 0;
 }
 
-.mainContent .inner article h4 {
+.mainContent .inner article h3 {
     position: absolute;
     font-size: 20px;
     font-weight: 700;
@@ -261,11 +274,14 @@
 
 
 
+.subContent {
+    padding: 100px 0;
+}
 
 .subContent h3 {
     font-size: 50px;
     font-weight: 700;
-    margin: 100px 0 20px 0;
+    margin: 0 0 20px 0;
     color: #333;
     text-align: center;
 }
@@ -273,7 +289,7 @@
 .subContent p {
     font-size: 20px;
     font-weight: 500;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
     color: #333;
     text-align: center;
 }
@@ -281,6 +297,7 @@
 .subContent .inner {
     display: flex;
     gap: 30px;
+
     width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -296,9 +313,9 @@
 }
 
 .subContent .inner img {
-    flex: 0;
+    flex: 1;
     width: 100%;
-    height: 100%;
+
 }
 
 .subContent .inner article {
@@ -331,4 +348,70 @@
     left: 10%;
     transform: translate(0, 230%);
 
+}
+
+.footer {
+    background: #000;
+    width: 100%;
+
+}
+
+.footer .inner {
+    position: relative;
+    padding: 10px 0;
+}
+
+
+
+.footer .inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #fff;
+
+
+}
+
+.footer .social_icon {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform: translate(0, 10%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer .footerBanner {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+}
+
+.footer .footerBanner .headLine {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.footer .footerBanner .headLine::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    width: 30px;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+}
+
+.footer .footerBanner ul>li {
+    color: #f9f9f9;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.footer .footerBanner .banner {
+    flex: 1;
+    width: 100%;
 }

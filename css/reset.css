@@ -8,7 +8,8 @@
     box-sizing: border-box;
     font-size: inherit;
     font-weight: inherit;
-    color: #444444;
+    color: inherit;
+    margin: 0;
 }
 
 ul,
@@ -22,10 +23,17 @@ a {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 body {
     line-height: 1;
     letter-spacing: -0.025em;
     font-family: 'Noto Sans KR', sans-serif;
+    color: #444444;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
 }
