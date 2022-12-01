@@ -14,5 +14,13 @@ $(function () {
         nextArrow: false,
     });
 
+    $('#f_link').on('change', function () {
+        console.log('change', $(this).val());
+        var link = $(this).val();
+
+        if (link) {
+            window.open(link)
+        }
+    })
 
 });
