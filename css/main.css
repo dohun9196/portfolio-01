@@ -117,8 +117,8 @@
 
 .mainVisual .mainSlide .slick-dots>li {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background: #f9f9f9;
     margin: 0 20px;
     border-radius: 50%;
@@ -289,11 +289,11 @@
 
 .mainContent .inner article button {
     position: absolute;
-    color: #333;
+    color: #f9f9f9;
     font-size: 12px;
     border: 1px solid #999;
     box-sizing: border-box;
-    background: #ff0;
+    background: #333;
     padding: 10px 10px;
 
     bottom: 50%;
@@ -301,8 +301,6 @@
     transform: translate(0, 230%);
 
 }
-
-
 
 
 .mainProduct {
@@ -396,6 +394,7 @@
 
 .mainProduct .img_box {
     margin: 0 0 15px 0;
+    overflow: hidden;
 }
 
 .mainProduct .slick-dots {
@@ -405,25 +404,34 @@
 .mainProduct .slick-dots li {
     display: inline-block;
     margin: 0 10px;
+
 }
 
-.mainProduct .slick-dots>li {}
+.mainProduct strong {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
 
 .mainProduct .slick-dots button {
     width: 50px;
     height: 50px;
 
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     border-radius: 50%;
-    background: #131313;
+    border-spacing: 10px;
+    background: #787878;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
 
 }
 
-.mainProduct .main_pro_slide .slick-dots>li.slick-active {
-    background: #000;
+.mainProduct .slick-dots button:hover {
+
+    background: #131313;
 }
 
 
@@ -453,6 +461,10 @@
     text-align: center;
 }
 
+.subContent .container {
+    background: #f9f9f9;
+}
+
 .subContent .inner {
     display: flex;
     gap: 30px;
@@ -464,7 +476,7 @@
 
 .subContent .tireImg {
     position: relative;
-    background-color: #131313;
+    /* background-color: #131313; */
 }
 
 .subContent .inner figure {
@@ -484,29 +496,44 @@
 
 .subContent .inner article h4 {
     position: absolute;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
-    color: #f9f9f9;
-    text-shadow: 0 0 3px #000;
+    color: #333;
+    /* text-shadow: 0 0 3px #000; */
     margin: 10px 0 10px 0;
 
     top: 10%;
-    left: 10%;
+    left: 0%;
+}
+
+.subContent .inner article p {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 300;
+    color: #333;
+    /* text-shadow: 0 0 3px #000; */
+    margin: 35px 0;
+    text-align: left;
+    top: 10%;
+    left: 0%;
 }
 
 .subContent .inner article a {
     position: absolute;
-    color: #333;
+    color: #f9f9f9;
     font-size: 12px;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
     box-sizing: border-box;
-    background: #ff0;
+    background: #9d9d9d;
     padding: 10px 10px;
 
-    bottom: 50%;
-    left: 10%;
-    transform: translate(0, 230%);
+    top: 50%;
+    left: 50%;
+    transform: translate(190%, -131%);
+}
 
+.subContent .inner article a:hover {
+    background: #919191;
 }
 
 .footer {
